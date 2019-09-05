@@ -1,4 +1,4 @@
-package reqres.api.models.usersModels.listOfUsersResponseModel;
+package reqres.api.models.usersModels.ListOfUsersResponseModels;
 
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;

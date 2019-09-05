@@ -1,4 +1,4 @@
-package reqres.api.models.usersModels.createUserResponseModel;
+package reqres.api.models.usersModels.createUserModels;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;

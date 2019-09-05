@@ -2,8 +2,8 @@ package reqres.api.apiTests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import reqres.api.models.usersModels.updateUserRequestModel.UpdateUserRequestModel;
-import reqres.api.models.usersModels.updateUserResponseModel.UpdateUserResponseModel;
+import reqres.api.models.usersModels.updateUserModels.UpdateUserRequestModel;
+import reqres.api.models.usersModels.updateUserModels.UpdateUserResponseModel;
 import reqres.api.services.usersApiService.UsersApiService;
 import reqres.api.steps.LoginSteps;
 
@@ -17,15 +17,15 @@ public class UpdateUserPutTest {
     UsersApiService usersApiService = new UsersApiService();
     LoginSteps loginSteps = new LoginSteps();
 
-    private String authToken = "";
+    private String authToken;
 
     @BeforeClass
     public void setupToken() {
         authToken = loginSteps.loginUser_returnAuthToken();
     }
 
-    @Test
-    public void UpdateUser() {
+    @Test(description = "Update user by model")
+    public void updateUser() {
         UpdateUserRequestModel updateUserRequestModel = new UpdateUserRequestModel()
                 .setJob(getFakerUserJob())
                 .setName(getFakerUserName());
