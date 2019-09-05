@@ -12,14 +12,14 @@ public class DeleteUserTest {
     UsersApiService usersApiService = new UsersApiService();
     LoginSteps loginSteps = new LoginSteps();
 
-    private String authToken = "";
+    private String authToken;
 
     @BeforeClass
     public void setupToken() {
         authToken = loginSteps.loginUser_returnAuthToken();
     }
 
-    @Test
+    @Test(description = "delete user by id")
     public void deleteUserById() {
         usersApiService
                 .deleteUser(authToken, 2)

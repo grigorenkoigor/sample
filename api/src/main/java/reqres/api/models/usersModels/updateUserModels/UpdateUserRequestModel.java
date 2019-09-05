@@ -1,4 +1,4 @@
-package reqres.api.models.usersModels.createUserRequestModel;
+package reqres.api.models.usersModels.updateUserModels;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
@@ -10,7 +10,7 @@ import javax.annotation.Generated;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class CreateUserRequestModel{
+public class UpdateUserRequestModel{
 
 	@JsonProperty("name")
 	private String name;

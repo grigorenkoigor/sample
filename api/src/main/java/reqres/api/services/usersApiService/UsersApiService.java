@@ -4,8 +4,8 @@ import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 import reqres.api.AssertableResponse;
-import reqres.api.models.usersModels.createUserRequestModel.CreateUserRequestModel;
-import reqres.api.models.usersModels.updateUserRequestModel.UpdateUserRequestModel;
+import reqres.api.models.usersModels.createUserModels.CreateUserRequestModel;
+import reqres.api.models.usersModels.updateUserModels.UpdateUserRequestModel;
 import reqres.api.services.SetupApiService;
 
 @Slf4j
